@@ -1,0 +1,19 @@
+.date-input {
+  #picker {
+    display: none;
+  }
+
+  &::after {
+    content: url("https://bucket.pegadaian.co.id/design-system-salt-bucket/assets/icons/calender.svg");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+    right: 16px;
+    top: 10px;
+  }
+}
+
+input[type="date"i]::-webkit-calendar-picker-indicator {
+  display: none;
+}
