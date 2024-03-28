@@ -32,6 +32,17 @@
     .typography-sigma("Bold");
   }
 
+  //   .caption:hover::before {
+  //     top: 4px;
+  //     left: 4px;
+  //     width: 16px;
+  //     height: 16px;
+  //     border-radius: 4px;
+  //     background-color: #00ab4e;
+  //     border: 1px green solid;
+  //     box-shadow: 0 0 0 0.2rem rgba(0 171 78 25%);
+  //   }
+
   input:checked + .caption::before {
     font-family: System-Icon !important;
     font-style: normal;
@@ -63,7 +74,8 @@
   }
 
   input:focus + .caption::before {
-    box-shadow: 13px @lime-50;
-    opacity: 0.5;
+    // box-shadow: 13px @lime-50;
+    // opacity: 0.5;
+    box-shadow: 0 0 0 0.2rem rgba(0 171 78 25%);
   }
 }
