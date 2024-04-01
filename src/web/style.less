@@ -1,7 +1,11 @@
+/* stylelint-disable prettier/prettier */
+/* stylelint-disable comment-whitespace-inside */
+/* stylelint-disable import-notation */
 /* START - default Theme */
+
 .wm-app {
-  @import "../../components/bootstrap/less/bootstrap.less";
-  @import "mixing.less";
+  @import url("../../components/bootstrap/less/bootstrap.less");
+  @import url("mixing.less");
 
   font-size: @font-size-base;
   color: @text-color;
@@ -66,7 +70,7 @@
   @wm-datepicker-btn-hover-bg: #f0f0f0;
   @wm-checked-color: #fff;
 
-  /* Box Shadow effect */
+  /*Box Shadow effect*/
   .box-shadow (@x: 0px, @y: 2px, @blur: 5px, @color: #DBDBDB) {
     box-shadow: @arguments;
     -webkit-box-shadow: @arguments;
@@ -77,13 +81,18 @@
 
   .btn-shadow {
     box-shadow:
-      0 2px 5px rgba(0 0 0 0.16),
-      0 2px 10px rgba(0 0 0 0.12);
-    -webkit-box-shadow: 0 2px 5px rgba(0 0 0 0.16) 0 2px 10px rgba(0 0 0 0.12);
-    -moz-box-shadow: 0 2px 5px rgba(0 0 0 0.16) 0 2px 10px rgba(0 0 0 0.12);
+      0 2px 5px rgb(0 0 0 / 16%),
+      0 2px 10px rgb(0 0 0 / 12%);
+    -webkit-box-shadow:
+      0 2px 5px rgb(0 0 0 / 16%),
+      0 2px 10px rgb(0 0 0 / 12%);
+    -moz-box-shadow:
+      0 2px 5px rgb(0 0 0 / 16%),
+      0 2px 10px rgb(0 0 0 / 12%);
   }
 
   /* Applies inset shadow effect */
+
   .inset-shadow(@x: 0px, @y: 2px, @blur: 5px, @spread: 0, @color: #DBDBDB) {
     box-shadow: inset @arguments;
     -webkit-box-shadow: inset @arguments;
@@ -96,7 +105,7 @@
     border-radius: @thumbnail-border-radius;
   }
 
-  /****** Label: overiding the label class as bootstrap is making all the labels bold ***/
+  /******Label: overiding the label class as bootstrap is making all the labels bold***/
   label {
     font-weight: normal;
   }
@@ -154,7 +163,7 @@
   }
 
   * {
-    -webkit-tap-highlight-color: rgba(255 255 255 0);
+    -webkit-tap-highlight-color: rgb(255 255 255 / 0%);
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -168,7 +177,7 @@
     background-color: transparent;
   }
 
-  /*** Tabs Widget: Styling for the tabs widget comes here ********/
+  /***Tabs Widget: Styling for the tabs widget comes here********/
   //Tab Content
   .tab-content {
     .tab-body {
@@ -254,13 +263,13 @@
     }
   }
 
-  /*** App Message ********/
+  /***App Message********/
   .app-message .close {
     position: relative;
     top: initial;
   }
 
-  /*** Tabs Widget: Styling for the tabs widget comes here ********/
+  /***Tabs Widget: Styling for the tabs widget comes here********/
   .list-group-item-separator {
     margin-bottom: 2px;
     border-radius: 2px;
@@ -270,7 +279,7 @@
     }
   }
 
-  /***** login modal form ***/
+  /*****login modal form***/
   .app-login-dialog {
     .app-dialog-body {
       .app-form {
@@ -291,9 +300,9 @@
     }
   }
 
-  /* ****************************************************************************************************************************************/
-  /* ******************************************************** Layout **************************************************************************/
-  /* ****************************************************************************************************************************************/
+  /*****************************************************************************************************************************************/
+  /*********************************************************Layout**************************************************************************/
+  /*****************************************************************************************************************************************/
   .app-content-column {
     background-color: @body-bg;
     padding: 1em 1.5em;
@@ -304,7 +313,7 @@
   .app-mobile-header {
     background-color: @wm-header-bg-color;
     color: @wm-header-text-color;
-    box-shadow: 0 1px 0 rgba(0 0 0 0.2);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 20%);
     border-color: transparent;
     height: @wm-header-height;
 
@@ -412,7 +421,7 @@
           .dropdown-menu {
             li > a {
               &:hover {
-                background-color: rgba(0 0 0 0.03);
+                background-color: rgb(0 0 0 / 3%);
               }
             }
           }
@@ -424,9 +433,9 @@
   //Left & Right Panels
   .app-left-panel,
   .app-right-panel {
-    box-shadow: 2px 2px 4px rgba(0 0 0 0.15);
-    -webkit-box-shadow: 2px 2px 4px rgba(0 0 0 0.15);
-    -moz-box-shadow: 2px 2px 4px rgba(0 0 0 0.15);
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    -webkit-box-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
 
     .nav {
       li {
@@ -528,7 +537,7 @@
     }
   }
 
-  /**** nav widget ****/
+  /****nav widget****/
   .app-nav {
     &.nav-pills,
     &.nav-justified {
@@ -603,15 +612,15 @@
     }
   }
 
-  /* *****************************************************************************************************************************************/
-  /* ************************************************** Widgets styling ************************************************************************/
-  /* *****************************************************************************************************************************************/
+  /******************************************************************************************************************************************/
+  /***************************************************Widgets styling************************************************************************/
+  /******************************************************************************************************************************************/
 
-  /* ************************************************** Custom Component Pegadaian Design ************************************************************************/
-  /* ***********************************************************************************************************************************************************/
+  /***************************************************Custom Component Pegadaian Design************************************************************************/
+  /************************************************************************************************************************************************************/
 
-  /* ************************************************** Custom Component Pegadaian Design ************************************************************************/
-  /* ***********************************************************************************************************************************************************/
+  /***************************************************Custom Component Pegadaian Design************************************************************************/
+  /************************************************************************************************************************************************************/
 
   .form-group {
     margin-bottom: 0.833em;
@@ -808,14 +817,14 @@
     }
   }
 
-  /*** Switch widget ****/
+  /***Switch widget****/
   .app-switch {
     .btn {
-      border-color: rgba(0 0 0 0.05);
+      border-color: rgb(0 0 0 / 5%);
     }
   }
 
-  /*** search widget ****/
+  /***search widget****/
   .app-search {
     .input-group-addon {
       padding: 0.667em;
@@ -826,13 +835,13 @@
     }
   }
 
-  /**** Input addon ***/
+  /****Input addon***/
   .input-group-addon {
     border: 0;
     border-bottom: 1px solid transparent;
   }
 
-  /****** grid styles *******/
+  /******grid styles*******/
   .app-grid {
     .form-search {
       padding: 1.5em;
@@ -1038,7 +1047,7 @@
     }
   }
 
-  /*** pagination ***/
+  /*** pagination***/
   .pagination {
     li {
       > a,
@@ -1061,7 +1070,7 @@
   .card {
     border-radius: @border-radius-base;
     border-color: transparent;
-    box-shadow: 0 1px 1px rgba(0 0 0 0.15);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
     margin-bottom: 1em;
 
     .panel-heading {
@@ -1098,7 +1107,7 @@
 
             &:hover,
             &:focus {
-              background-color: rgba(158 158 158 0.2);
+              background-color: rgb(158 158 158 / 20%);
               border-radius: 50%;
               transition:
                 color 0.5s ease,
@@ -1181,7 +1190,7 @@
     .card-title {
       font-size: 1.87em;
       font-weight: normal;
-      color: rgba(0 0 0 0.87);
+      color: rgb(0 0 0 / 87%);
     }
 
     .card-text {
@@ -1194,14 +1203,14 @@
     }
   }
 
-  /*** dropdown menu *****/
+  /*** dropdown menu*****/
   .dropdown-menu {
     padding: 0;
     margin: 0;
     border: 1px solid @dropdown-border;
     border-radius: 1px;
-    -webkit-box-shadow: 0 2px 10px rgba(0 0 0 0.2);
-    box-shadow: 0 2px 10px rgba(0 0 0 0.2);
+    -webkit-box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
@@ -1216,7 +1225,7 @@
         padding: 10px 15px;
 
         &:hover {
-          background-color: rgba(158 158 158 0.2);
+          background-color: rgb(158 158 158 / 20%);
         }
       }
     }
@@ -1239,7 +1248,7 @@
     }
   }
 
-  /* Date, DateTime & Dropdown widgets */
+  /*Date, DateTime & Dropdown widgets*/
   .app-calendar,
   .app-datetime,
   .app-timeinput {
@@ -1276,7 +1285,7 @@
             &:active:hover,
             &:active:focus {
               color: @component-active-color;
-              background-color: rgba(0 0 0 0.01);
+              background-color: rgb(0 0 0 / 1%);
               border-color: transparent;
             }
           }
@@ -1489,12 +1498,12 @@
   //Calendar Specific
   .app-calendar {
     background-color: @body-bg;
-    box-shadow: 0 2px 0 rgba(0 0 0 0.05);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
 
     .fc {
       .fc-state-default {
-        background: rgba(0 0 0 0.05);
-        border: 1px solid rgba(0 0 0 0.05);
+        background: rgb(0 0 0 / 5%);
+        border: 1px solid rgb(0 0 0 / 5%);
         color: @component-active-color;
         text-shadow: none;
 
@@ -1549,9 +1558,9 @@
     }
   }
 
-  /* ********************************************************************************************************************************************/
-  /* *************************************************** Advanced editors ******************************************************************************/
-  /* ********************************************************************************************************************************************/
+  /*********************************************************************************************************************************************/
+  /****************************************************Advanced editors******************************************************************************/
+  /*********************************************************************************************************************************************/
   //Spinner
   .app-spinner {
     .spinner-message {
@@ -1639,7 +1648,7 @@
     }
   }
 
-  /*** color picker class: adding the default size and padding to the addon *******/
+  /***color picker class: adding the default size and padding to the addon*******/
   .app-colorpicker {
     &.input-group {
       width: 13em;
@@ -1666,7 +1675,7 @@
     }
   }
 
-  /*** Slider widget styling *******************/
+  /***Slider widget styling*******************/
   input[type="range"] {
     color: @brand-primary;
   }
