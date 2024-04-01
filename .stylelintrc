@@ -20,6 +20,7 @@
     "declaration-block-no-shorthand-property-overrides": null,
     "selector-no-vendor-prefix": null,
     "value-no-vendor-prefix": null,
-    "no-duplicate-selectors": null
+    "no-duplicate-selectors": null,
+    "declaration-block-no-redundant-longhand-properties": null
   }
 }
