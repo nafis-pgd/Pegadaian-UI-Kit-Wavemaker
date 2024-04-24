@@ -3,7 +3,7 @@
 [class^="wi-"],
 [class*=" wi-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: System-Icon !important;
+  font-family: wavicon;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -40,12 +40,14 @@
         i.wi-plus::before {
           content: "\e996";
           font-size: 25px;
+          font-family: System-Icon !important;
         }
 
         i.wi-minus::before {
           content: "\e999";
           font-size: 25px;
           color: black;
+          font-family: System-Icon !important;
         }
       }
     }
